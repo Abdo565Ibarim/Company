@@ -10,51 +10,17 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Company.GO2.BLL.Repositories
 {
-    public class DepartmentRepository : IDepartmentRepository
+    public class DepartmentRepository : GenericRepsitory<Depratment> , IDepartmentRepository
     {
-        private readonly  CompanyDbContext _context;
-
-        public DepartmentRepository(CompanyDbContext context)
-        {
-            _context = context;     
-        }
-
-        public IEnumerable<Depratment> GetALL()
+        public DepartmentRepository(CompanyDbContext context) : base(context)
         {
 
-            return _context.Depratments.ToList();
         }
 
-        public Depratment? Get(int id)
-        {
 
-            return _context.Depratments.Find(id);
-        }
-        public int Add(Depratment model)
-        {
 
-            _context.Depratments.Add(model);
-            return _context.SaveChanges();
-        }
 
-        public int Update(Depratment model)
-        {
 
-            _context.Depratments.Update(model);
-            return _context.SaveChanges();
-        }
 
-        public int Delete(Depratment model)
-        {
-
-            _context.Depratments.Remove(model);
-            return _context.SaveChanges();
-        }
-
-       
-
-        
-
-        
     }
 }

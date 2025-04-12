@@ -7,18 +7,18 @@ using Company.GO2.DAL.Models;
 
 namespace Company.GO2.BLL.Interfaces
 {
-    public interface IDepartmentRepository
+    public interface IDepartmentRepository : IGenericRepositoryc<Depratment>
 
 
     {
-        IEnumerable<Depratment> GetALL();
+        //IEnumerable<Depratment> GetALL();
 
-        Depratment? Get(int id);    
+        //Depratment? Get(int id);    
 
-        int Add(Depratment model);
+        //int Add(Depratment model);
 
-        int Update(Depratment model);
+        //int Update(Depratment model);
 
-        int Delete(Depratment model);
+        //int Delete(Depratment model);
     }
 }
