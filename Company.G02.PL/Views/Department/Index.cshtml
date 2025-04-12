@@ -35,13 +35,13 @@
                     <td>@item.Name</td>
                     <td>@item.CreateAt</td>
                     <td>
-                        <a asp-action="Datails" class="btn btn-warning">Datails</a>
+                        <a asp-action="Datails" asp-route-id="@item.Id" class="btn btn-warning">Datails</a>
                     </td>
                     <td>
-                        <a asp-action="Edit" class="btn btn-success">Update</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">Update</a>
                     </td>
                     <td>
-                        <a asp-action="Delele" class="btn btn-danger">Delele</a>
+                        <a asp-action="Delele" asp-route-id="@item.Id" class="btn btn-danger">Delele</a>
                     </td>
 
                 </tr>
