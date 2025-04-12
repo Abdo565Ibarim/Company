@@ -25,6 +25,8 @@ namespace Company.GO2.DAL.Data.Contexts
         }
 
         public DbSet<Depratment> Depratments { get; set; }
+
+        public DbSet<Employee> Employees { get; set; }
     }
 
     //public class CompanyDbContext : DbContext
