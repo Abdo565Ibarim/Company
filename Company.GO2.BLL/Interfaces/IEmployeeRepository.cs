@@ -7,17 +7,19 @@ using Company.GO2.DAL.Models;
 
 namespace Company.GO2.BLL.Interfaces
 {
-    public interface IEmployeeRepository
+    public interface IEmployeeRepository : IGenericRepositoryc<Employee>
     {
-        IEnumerable<Employee> GetALL();
 
-        Employee? Get(int id);
 
-        int Add(Employee model);
+        //IEnumerable<Employee> GetALL();
 
-        int Update(Employee model);
+        //Employee? Get(int id);
 
-        int Delete(Employee model);
+        //int Add(Employee model);
+
+        //int Update(Employee model);
+
+        //int Delete(Employee model);
 
     }
 }

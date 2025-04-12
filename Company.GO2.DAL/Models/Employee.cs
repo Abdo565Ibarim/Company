@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Company.GO2.DAL.Models
 {
-    public class Employee
+    public class Employee : BaseEntity
     {
-
-        public int Id { get; set; }
-
         public string Name { get; set; }
 
         public int? Age { get; set; }

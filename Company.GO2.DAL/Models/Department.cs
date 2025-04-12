@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Company.GO2.DAL.Models
 {
-    public class Depratment
+    public class Depratment : BaseEntity
     {
-        public int Id { get; set; }
+       
 
         public string Code { get; set; }
 
